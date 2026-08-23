@@ -1,0 +1,104 @@
+/* Base Font Setup */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap');
+
+/* Global Container */
+.app-container {
+  padding: 40px;
+  font-family: sans-serif;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.app-description {
+  margin-bottom: 15px;
+}
+
+.upload-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 20px;
+}
+
+.custom-file-upload {
+  /* Set a fixed width to prevent UI shifting */
+  width: 160px; 
+  padding: 10px 16px;
+  text-align: center;
+  background-color: #f0f0f0;
+  border: 1px solid #ccc;
+  border-radius: 25px;
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 1rem;
+  box-sizing: border-box;
+  transition: all 0.4s cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+.custom-file-upload:hover {
+  background-color: #e0e0e0;
+}
+
+.custom-file-input {
+  /* Hide default browser input */
+  display: none; 
+}
+
+.file-name-display {
+  font-size: 15px;
+  color: #666;
+  max-width: 300px;
+  white-space: nowrap;
+  overflow: hidden;
+  padding-top: 10px;
+  /* Required for max-width to apply correctly */
+  display: inline-block; 
+}
+
+/* Action Buttons & Document Preview */
+.download-button {
+  padding: 10px 20px;
+  background: #007bff;
+  color: white;
+  text-decoration: none;
+  border-radius: 25px;
+  display: inline-block;
+  margin-top: 30px;
+  margin-bottom: 20px;
+  font-weight: bold;
+  transition: all 0.4s cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+.download-button:hover {
+  background-color: #0064cf;
+}
+
+.pdf-preview-container {
+  /* Fill standard container layout */
+  width: 100%; 
+  
+  /* Restrict horizontal scrolling */
+  max-width: 100%; 
+  
+  /* Lock aspect ratio to match standard US Letter paper */
+  aspect-ratio: 8.5 / 11;
+  
+  margin: 0 auto;
+  border: 1px solid #e2e8f0;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.08), 0 8px 10px -6px rgba(0, 0, 0, 0.08);
+}
+
+/* Mobile Viewport Overrides */
+@media (max-width: 768px) {
+  .pdf-preview-container {
+    /* Limit vertical space taken up on mobile devices */
+    height: 50vh; 
+  }
+}
+
+iframe {
+  border: none;
+}
