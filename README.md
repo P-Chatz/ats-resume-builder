@@ -1,6 +1,6 @@
 # ATS Resume Builder - **🚀 [Try the Live Demo](https://P-Chatz.github.io/ats-resume-builder)🚀**
 
-A client-side React utility that parses professional data archives into Applicant Tracking System (ATS) compliant PDF resumes. Compatible with **LinkedIn data archives**.
+A client-side React utility that parses profile data archives into Applicant Tracking System (ATS) compliant PDF resumes. Compatible with **LinkedIn data archives**.
 
 ![ATS Resume Builder Preview](assets/ats-resume-builder-preview.png)
 
